@@ -31,6 +31,7 @@ void FillArrayRandomNumbers(double[] numbers)
     }
 }
 void printArray(double[] numbers)
+
 {
     Console.Write("[");
     for(int i = 0; i < numbers.Length; i++)
