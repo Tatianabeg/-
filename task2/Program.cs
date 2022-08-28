@@ -1,10 +1,9 @@
-﻿Task38.
-Console.WriteLine("size array");
+﻿Console.WriteLine("size array");
 int size = Convert.ToInt32(Console.ReadLine());
 double[] numbers = new double[size];
 FillArrayRandomNumbers(numbers);
 Console.WriteLine("array");
-PrintArray(numbers);
+printArray(numbers);
 double min = Int32.MaxValue;
 double max = Int32.MinValue;
 
@@ -21,7 +20,7 @@ for (int z = 0; z < numbers.Length; z++)
 }
 
     Console.WriteLine($"{numbers.Length}");
-    Console.WriteLine(${max - min});
+    Console.WriteLine($"{max - min}");
 
 void FillArrayRandomNumbers(double[] numbers)
 {
