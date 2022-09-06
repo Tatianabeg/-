@@ -35,7 +35,7 @@ Console.WriteLine("Task50.Ввод номера строки");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите номер столбца");
 int m = Convert.ToInt32(Console.ReadLine());
-int [,] numbers = new int [10,10];
+int [,] number = new int [10,10];
 FillArrayRandomNumbers(numbers);
 
 if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
@@ -60,7 +60,7 @@ void FillArrayRandomNumbers(int[,] array)
         }
 }
 
-void PrintArray(int[,] array)
+void PrintArray (int[,] array)
 {
  for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -77,11 +77,11 @@ void PrintArray(int[,] array)
 
 
 Console.WriteLine( "Task52. Bвод количеств строк");
-int n = Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Bвод количеств столбцов");
-int m = Convert.ToInt32(Console.ReadLine());
+int M = Convert.ToInt32(Console.ReadLine());
 
-int[,] numbers = new int[n, m];
+int[,] number = new int[n, m];
 FillArrayRandomNumbers(numbers);
 
 
@@ -95,7 +95,7 @@ for (int j = 0; j < numbers.GetLength(1); j++)
  avarage = avarage / n;
  Console.Write(avarage + "; ");
 }
-Console.WriteLine();
+Console.WriteLine();M
 PrintArray(numbers);
 
 
@@ -123,5 +123,6 @@ void PrintArray(int[,] array)
         }
  Console.Write("]");
  Console.WriteLine("");
+ {
   }
 } 
